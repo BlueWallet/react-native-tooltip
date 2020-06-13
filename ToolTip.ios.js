@@ -60,13 +60,13 @@ export default class ToolTip extends PureComponent {
     getTouchableHighlightProps = () => {
         const props = {};
 
-        Object.keys(TouchableHighlight.propTypes).forEach((key) => props[key] = this.props[key]);
+//         Object.keys(TouchableHighlight.propTypes).forEach((key) => props[key] = this.props[key]);
 
-        if (this.props.longPress) {
-            props.onLongPress = this.showMenu;
-        } else {
-            props.onPress = this.showMenu;
-        }
+//         if (this.props.longPress) {
+//             props.onLongPress = this.showMenu;
+//         } else {
+//             props.onPress = this.showMenu;
+//         }
 
         return props;
     };
